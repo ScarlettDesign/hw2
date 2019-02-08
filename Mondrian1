@@ -1,0 +1,18 @@
+
+function setup() {
+    createCanvas(400, 400);
+}
+
+function draw() {
+    background(0);
+	
+	fill(200,200,170)
+	strokeWeight(5)
+	quad(200,0,width,200,200,height,0,200)
+	
+	fill(0)
+	rect(0,110,height,5)
+	rect(100,0,5,width)
+	rect(320,0,10,height)
+	rect(0,330,width,8)
+}
