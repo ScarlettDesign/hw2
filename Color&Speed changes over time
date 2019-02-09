@@ -1,0 +1,24 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+var y = 10;
+var changeIny = 8;
+
+function draw() {
+  background(220);
+
+  ellipse(100, y, 40);
+
+  y = y + changeIny;
+
+  if (y > height) {
+    changeIny = -2;
+		fill(100,200,20)
+  }
+
+  if (y < 0) {
+    changeIny = 8;
+		fill(50,200,200)
+  }
+}
