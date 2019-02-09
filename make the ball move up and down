@@ -1,0 +1,22 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+var y = 10;
+var changeIny = 3;
+
+function draw() {
+  background(220);
+
+  ellipse(10, y, 40);
+
+  y = y + changeIny;
+
+  if (y > height) {
+    changeIny = -3;
+  }
+
+  if (y < 0) {
+    changeIny = 3;
+  }
+}
